@@ -1,0 +1,56 @@
+
+body{
+  background-color: #ADB5AC;
+  margin: 10px;
+  padding: 0px;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  text-align: center;
+  background-color: #ADB5AC;
+  grid-area: header;
+}
+
+.button-bar{
+  background: linear-gradient(#0A4500 50%,#0F2600);
+  width: 185px;
+  height: 100vh;
+  padding: 10px;
+  padding-right: 6px;
+  padding-top: 6px;
+  border-radius: 15px; 
+  grid-area: button-bar;
+}
+
+button{
+  margin-bottom: 10px;
+}
+
+.text-body{
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  text-align: center;
+  background-color: #ADB5AC;
+  grid-area: text-body;
+}
+
+#container{
+  display: grid;
+  grid-template:
+  "button-bar header header" 120px
+  "button-bar text-body text-body" 1fr
+  "button-bar text-body text-body" 1fr
+  / [col-start] 205px [col-1] 1fr [col-end] 1fr;
+  background-color: #ADB5AC;  
+}
+
+.margin{
+  margin:80px;
+  background-color: red;
+}
+
